@@ -1,0 +1,1 @@
+Admin dashboard sample page. made with CSS grid.
