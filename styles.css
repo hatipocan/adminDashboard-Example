@@ -1,7 +1,15 @@
+body {
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    height: auto;
+}
+
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 2fr 15fr;
+    grid-template-rows: 2fr 17fr;
 }
 
 .header-container {
@@ -11,6 +19,25 @@
     grid-column: 2 /3;
     align-items: center;
     gap: 20px;
+    padding: 20px;
+}
+
+header.header-container {
+    background-color: azure;
+}
+
+nav.side-bar-container {
+    background-color: lightblue;
+}
+
+ul.first-menu ,li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+h1.dashboard-title {
+    margin: 10px;
+    padding: 10px;
 }
 
 .side-bar-container {
@@ -20,9 +47,9 @@
 
 .search-bar-container {
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 25px 9fr;
     grid-auto-rows: 30px;
-
+    
 }
 
 .header-id-container {
@@ -49,6 +76,7 @@
 .ringing-bell > .name {
     font-size: 1.5em;
     font-weight: bolder;
+    padding: 10px;
 }
 
 .ringing-bell > .bear-icon {
@@ -64,6 +92,7 @@
 
 .header-title-container > .bear-icon-subheader {
     font-size: 2em;
+    padding: 10px;
 }
 
 .buttons-container {
@@ -74,4 +103,16 @@
 
 .project-articles-container {
     background-color: lightgray;
+}
+
+.buttons-container > button {
+    border-style: none;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.buttons-container > button:hover {
+    background-color: darkblue;
+    color: antiquewhite;
 }
