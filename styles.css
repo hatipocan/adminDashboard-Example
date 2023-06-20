@@ -1,14 +1,16 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 2fr 5fr;
+    grid-template-rows: 2fr 15fr;
 }
 
 .header-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-row: 1fr 2fr;
+    grid-template-rows: 30px 30px;
     grid-column: 2 /3;
+    align-items: center;
+    gap: 20px;
 }
 
 .side-bar-container {
@@ -18,10 +20,58 @@
 
 .search-bar-container {
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 1fr 9fr;
+    grid-auto-rows: 30px;
+
 }
 
 .header-id-container {
     display: grid;
-    grid-template-columns: 1fr 3fr 5fr;
+    justify-items: end;
+    
+}
+
+.ringing-bell {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    gap: 15px;
+    align-items: center;
+    justify-items: end;
+}
+
+.header-container > .search-bar-container > input {
+    height: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgrey;
+}
+
+.ringing-bell > .name {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.ringing-bell > .bear-icon {
+   font-size: 2em;
+
+}
+
+.header-title-container {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+
+.header-title-container > .bear-icon-subheader {
+    font-size: 2em;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.project-articles-container {
+    background-color: lightgray;
 }
