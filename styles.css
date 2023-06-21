@@ -5,11 +5,44 @@ body {
     height: auto;
 }
 
+.icon {
+    width: 1.5em;
+    margin: 0;
+}
+
+ul.first-menu li a {
+    display: grid;
+    grid-template-columns: 2em 3em;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+ul.first-menu {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    gap: 1em;
+}
+
+ul.second-menu {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    gap: 1em;
+}
+
+ul.second-menu li a {
+    display: grid;
+    grid-template-columns: 2em 3em;
+    align-items: center;
+    font-size: 1.5em;
+}
+
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 2fr 17fr;
+    grid-template-rows: 2fr 10fr;
 }
 
 .header-container {
@@ -43,7 +76,23 @@ h1.dashboard-title {
 .side-bar-container {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: 4em 19em 8em;
+    gap: 2em;
 }
+
+.dashboard-title {
+    grid-row: 1 / 2;
+}
+
+.first-menu {
+    grid-row: 2 / 3;
+}
+
+.second-menu {
+    grid-row: 3 / 4;
+}
+
 
 .search-bar-container {
     display: grid;
@@ -102,8 +151,91 @@ h1.dashboard-title {
 }
 
 .project-articles-container {
+    display: grid;
     background-color: lightgray;
+    grid-template-columns: 2fr 1fr;
+
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 16em);
+    grid-template-rows: 2em auto;
+    gap: 2em;
+    padding: 1em;
+}
+
+.projects > h3 {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+}
+
+.project-card {
+
+    background-color: white;
+    width: 1fr;
+    height: 10em;
+    border-radius: 10px;
+    border-left: solid yellow 4px;
+    padding: 1.2em;
+    box-shadow: 0.3em 0.3em rgba(0, 0, 0, 0.434);
+
+}
+
+.card-icons {
+    display: grid;
+    grid-template-columns: 2em 2em 2em;
+    width: 1.5em;
+    
+}
+
+.image-container {
+    align-self: self-end;
+    display: grid;
+    grid-template-columns: 2em 2em 2em;
+    justify-content: end;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2em 1fr 2em 1fr;
+    gap: 2em;
+    padding: 1em;
+}
+
+.announcements > .title-announcements {
+    grid-row: 1 / 2;
+}
+
+.announcements > .title-trending {
+    grid-row: 3 / 4;
+}
+
+.announcements-card {
+
+    grid-row: 2 / 3;
+    background-color: white;
+    width: 1fr;
+    height: 14em;
+    border-radius: 10px;
+    border-left: solid yellow 4px;
+    box-shadow: 0.3em 0.3em rgba(0, 0, 0, 0.434);
+
+}
+
+.trending-card {
+    grid-row: 4 / 5;
+    background-color: white;
+    width: 1fr;
+    height: 14em;
+    border-radius: 10px;
+    border-left: solid yellow 4px;
+
+}
+
+
 
 .buttons-container > button {
     border-style: none;
@@ -115,4 +247,5 @@ h1.dashboard-title {
 .buttons-container > button:hover {
     background-color: darkblue;
     color: antiquewhite;
+    cursor: pointer;
 }
